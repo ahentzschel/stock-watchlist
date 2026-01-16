@@ -101,3 +101,27 @@ h1 {
         width: 100%;
     }
 }
+
+/* Styles for criteria section and last updated timestamp */
+.criteria-section {
+    margin-top: 24px;
+}
+.criteria-section h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #1976d2;
+}
+.criteria-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+.criteria-section li {
+    margin-bottom: 5px;
+}
+.last-updated {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+}
