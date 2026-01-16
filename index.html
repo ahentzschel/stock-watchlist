@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Watchlist</title>
+    <!-- Link to external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Watchlist</h1>
+
+        <!-- Search bar for filtering the table -->
+        <div class="search-container">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search stocks..."
+                aria-label="Search stocks"
+            />
+        </div>
+
+        <!-- Table displaying the watchlist -->
+        <div class="table-responsive">
+            <table id="stocksTable">
+                <thead>
+                    <tr>
+                        <!-- Each header is clickable to sort by that column -->
+                        <th data-index="0">Company (Ticker)</th>
+                        <th data-index="1">Business &amp; Industry</th>
+                        <th data-index="2">Market Cap (USD&nbsp;B)</th>
+                        <th data-index="3">Growth Drivers &amp; Fundamentals</th>
+                        <th data-index="4">Social‑media/Viral Potential</th>
+                        <th data-index="5">Key Risks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Data and script logic -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
